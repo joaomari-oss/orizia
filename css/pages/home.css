@@ -357,11 +357,21 @@
   background: var(--white);
 }
 
+.score-teaser__inner {
+  max-width: var(--container-width, 1280px);
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0;
+}
+
 .score-teaser__left {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 80px;
+  padding: 120px 80px 120px 0;
 }
 
 .score-teaser__label {
@@ -436,6 +446,11 @@
   gap: 40px;
   padding-left: 80px;
   border-left: 1px solid var(--line);
+}
+
+.score-bars {
+  max-width: 280px;
+  width: 100%;
 }
 
 .score-gauge-mini {
@@ -907,13 +922,16 @@
   }
 
   .score-teaser {
-    grid-template-columns: 1fr;
     padding: 80px 0;
   }
 
+  .score-teaser__inner {
+    grid-template-columns: 1fr;
+    padding: 0 48px;
+  }
+
   .score-teaser__left {
-    padding-right: 0;
-    margin-bottom: 60px;
+    padding: 0 0 60px 0;
   }
 
   .score-teaser__right {
@@ -978,6 +996,14 @@
   .score-teaser__highlights {
     max-width: 100%;
   }
+
+  .score-teaser__inner {
+    padding: 0 24px;
+  }
+
+  .score-bars {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -989,4 +1015,11 @@
   .hero__subtitle { font-size: 14px; }
   .problem__left,
   .problem__right { padding: 48px 20px; }
+
+  .score-teaser__inner { padding: 0 20px; }
+  .score-teaser__left  { padding-bottom: 48px; }
+  .score-teaser        { padding: 64px 0; }
+  .score-gauge-mini    { width: 160px; height: 160px; }
+  .score-gauge-mini svg { width: 160px; height: 160px; }
+  .score-gauge-mini__number { font-size: 40px; }
 }
