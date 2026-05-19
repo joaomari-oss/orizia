@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orizia Score — Um número para sua operação embarcada</title>
+  <meta name="description" content="O Orizia Score: um indicador composto mensal que sintetiza toda a sua operação de seguros embarcados.">
+  <style>
+    :root{--navy:#0B1C35;--cream:#EEF2F8;--white:#F4F7FC;--silver:#A8BAD0;--text-dark:#0B1C35;--text-muted:#7A93B5}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{cursor:none}
+    body{font-family:'Outfit',sans-serif;background:var(--navy);color:var(--white)}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Outfit:wght@200;300;400;500&display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/pages/score.css">
+</head>
+<body class="page-dark">
+
+  <div class="page-transition-overlay"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <nav class="nav nav--dark" role="navigation" aria-label="Navegação principal">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Orizia — Início">
+        <span class="nav__logo-name">ORIZIA</span>
+        <span class="nav__logo-sub">Consulting</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Início</a></li>
+        <li><a href="capabilities.html" class="nav__link">Capacidades</a></li>
+        <li><a href="score.html" class="nav__link active">Score</a></li>
+        <li><a href="report.html" class="nav__link">Relatório</a></li>
+      </ul>
+      <button class="nav__lang" data-lang-toggle type="button" aria-label="Trocar idioma">
+        <span class="nav__lang-opt active" data-lang-pt>PT</span>
+        <span class="nav__lang-sep">/</span>
+        <span class="nav__lang-opt" data-lang-en>EN</span>
+      </button>
+      <a href="contact.html" class="nav__cta">Iniciar conversa</a>
+      <button class="nav__hamburger" aria-label="Abrir menu">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile-overlay" role="dialog" aria-modal="true" aria-label="Navegação mobile">
+    <ul class="nav__mobile-links">
+      <li><a href="../index.html" class="nav__mobile-link">Início</a></li>
+      <li><a href="capabilities.html" class="nav__mobile-link">Capacidades</a></li>
+      <li><a href="score.html" class="nav__mobile-link">Score</a></li>
+      <li><a href="report.html" class="nav__mobile-link">Relatório</a></li>
+    </ul>
+    <a href="contact.html" class="nav__mobile-cta">Iniciar conversa</a>
+    <div class="nav__mobile-bottom">
+      <span class="nav__mobile-bottom-label">Contato</span>
+      <a href="mailto:contato@orizia.com.br" class="nav__mobile-bottom-email">contato@orizia.com.br</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="score-hero">
+    <div class="container">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html" class="page-hero__breadcrumb-item">Início</a>
+        <span class="page-hero__breadcrumb-sep" aria-hidden="true">—</span>
+        <span class="page-hero__breadcrumb-item" aria-current="page">Score</span>
+      </nav>
+      <p class="eyebrow reveal" style="margin-bottom:32px;">Orizia Score</p>
+      <h1 class="score-hero__title reveal"
+          data-en-html="A single number that tells<br>the <em>complete story.</em>">
+        Um único número que conta<br>a <em>história completa.</em>
+      </h1>
+      <p class="score-hero__subtitle reveal reveal-delay-1">
+        O Orizia Score sintetiza toda a sua operação de seguros embarcados em um indicador composto, calibrado contra benchmarks do setor e entregue mensalmente. É a métrica única que executivos podem acompanhar — e em torno da qual podem agir.
+      </p>
+    </div>
+  </section>
+
+  <!-- SCORE DISPLAY -->
+  <section class="score-display">
+    <div class="container">
+      <div class="score-display__main reveal">
+        <div class="score-display__gauge-wrap">
+          <svg class="score-gauge" width="400" height="400" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+            <circle cx="200" cy="200" r="160" fill="none" stroke="rgba(168,186,208,0.15)" stroke-width="2"/>
+            <circle class="score-gauge__fill" cx="200" cy="200" r="160" fill="none" stroke="#6B91C1" stroke-width="3"
+                    stroke-dasharray="1005" stroke-dashoffset="261"
+                    transform="rotate(-90 200 200)" stroke-linecap="round"/>
+            <circle cx="200" cy="40" r="6" fill="#6B91C1"/>
+          </svg>
+          <div class="score-gauge__center">
+            <p class="score-gauge__value">74</p>
+            <p class="score-gauge__scale">/ 100</p>
+          </div>
+        </div>
+        <div class="score-display__meta">
+          <p class="score-display__label">Orizia Score — Maio 2026</p>
+          <p class="score-display__sublabel">Composição da operação · Calibrada ao setor</p>
+        </div>
+      </div>
+
+      <div class="score-display__indicators">
+        <div class="indicator">
+          <p class="indicator__name">Controle de Churn</p>
+          <p class="indicator__value">82</p>
+          <p class="indicator__desc">Performance de retenção contra a média histórica do setor</p>
+        </div>
+        <div class="indicator">
+          <p class="indicator__name">Taxa de Adesão</p>
+          <p class="indicator__value">68</p>
+          <p class="indicator__desc">Eficiência de conversão em todos os canais embarcados</p>
+        </div>
+        <div class="indicator">
+          <p class="indicator__name">Fit de Produto</p>
+          <p class="indicator__value">71</p>
+          <p class="indicator__desc">Alinhamento entre cobertura, preço e expectativa do segurado</p>
+        </div>
+        <div class="indicator">
+          <p class="indicator__name">Risco da Carteira</p>
+          <p class="indicator__value">75</p>
+          <p class="indicator__desc">Estabilidade ajustada ao risco em todos os segmentos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section class="methodology">
+    <div class="container">
+      <p class="eyebrow reveal" style="margin-bottom:24px;">Metodologia</p>
+      <h2 class="methodology__title reveal reveal-delay-1">Como o score é calculado.</h2>
+      <div class="methodology__steps">
+        <div class="method-step">
+          <p class="method-step__num">Passo 01</p>
+          <h3 class="method-step__name">Ingestão e limpeza de dados</h3>
+          <p class="method-step__desc">Padronizamos dados brutos da carteira de múltiplas fontes — sistemas de apólice, registros de sinistro, plataformas embarcadas e logs comportamentais — em um modelo unificado.</p>
+        </div>
+        <div class="method-step">
+          <p class="method-step__num">Passo 02</p>
+          <h3 class="method-step__name">Cálculo dos subindicadores</h3>
+          <p class="method-step__desc">Quatro modelos proprietários computam controle de churn, taxa de adesão, fit de produto e risco da carteira, cada um pontuado de 0 a 100 contra benchmarks específicos do setor.</p>
+        </div>
+        <div class="method-step">
+          <p class="method-step__num">Passo 03</p>
+          <h3 class="method-step__name">Síntese do Score composto</h3>
+          <p class="method-step__desc">Subindicadores são ponderados conforme suas dependências dinâmicas e sintetizados em um Score único — uma representação fiel da operação como um todo.</p>
+        </div>
+        <div class="method-step">
+          <p class="method-step__num">Passo 04</p>
+          <h3 class="method-step__name">Calibração de benchmark e entrega</h3>
+          <p class="method-step__desc">O Score é calibrado contra benchmarks do mercado brasileiro de seguros embarcados e entregue com um brief de duas páginas explicando os movimentos, causas e recomendações.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="score-cta">
+    <div class="container">
+      <p class="eyebrow" style="margin-bottom:24px;">Solicite seu Score</p>
+      <h2 class="score-cta__title"
+          data-en-html="What's the Score of<br>your embedded operation?">
+        Qual é o Score da sua<br>operação embarcada?
+      </h2>
+      <p class="score-cta__desc">O cálculo do primeiro Score leva 21 dias da assinatura do NDA à entrega. Inclui sessão executiva completa de revisão e mapeamento de caminhos.</p>
+      <a href="contact.html" class="btn btn--silver">Solicitar seu primeiro score →</a>
+    </div>
+  </section>
+
+  <footer style="background:#08152A;padding:48px 0;border-top:1px solid rgba(168,186,208,0.08);">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;">
+      <a href="../index.html" style="display:flex;flex-direction:column;gap:4px;text-decoration:none;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;letter-spacing:0.18em;color:var(--white);">ORIZIA</span>
+        <span style="font-size:8px;letter-spacing:0.45em;text-transform:uppercase;color:var(--text-muted);">Consulting</span>
+      </a>
+      <nav style="display:flex;gap:32px;" aria-label="Navegação do rodapé">
+        <a href="../index.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Início</a>
+        <a href="capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Capacidades</a>
+        <a href="report.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Relatório</a>
+        <a href="contact.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Contato</a>
+      </nav>
+      <p style="font-size:11px;color:var(--text-muted);letter-spacing:0.05em;">© 2026 Orizia Consulting</p>
+    </div>
+  </footer>
+
+  <script defer src="../js/i18n.js"></script>
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/animations.js"></script>
+  <script defer src="../js/pages/score.js"></script>
+</body>
+</html>

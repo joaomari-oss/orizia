@@ -1,0 +1,214 @@
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-up {
+  opacity: 0;
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+
+.reveal {
+  transform: translateY(32px);
+}
+
+.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal-up {
+  transform: translateY(48px);
+}
+
+.reveal.visible,
+.reveal-left.visible,
+.reveal-right.visible,
+.reveal-up.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+.reveal-delay-6 { transition-delay: 0.6s; }
+
+/* ── Capability section entrance ────────────────────── */
+.capability-section {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s var(--ease), transform 0.75s var(--ease);
+}
+.capability-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Card grid entrance (capability-card, inside-card, sample-card, indicator, method-step) ── */
+.capability-card,
+.inside-card,
+.sample-card,
+.indicator,
+.method-step {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+.capability-card.card-visible,
+.inside-card.card-visible,
+.sample-card.card-visible,
+.indicator.card-visible,
+.method-step.card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes rotate-reverse {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.4); opacity: 0.6; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes draw-line {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gauge-fill {
+  from { stroke-dashoffset: 502; }
+}
+
+@keyframes bar-fill {
+  from { width: 0; }
+}
+
+@keyframes line-draw {
+  from { stroke-dashoffset: 1000; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes check-draw {
+  from { stroke-dashoffset: 40; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes circle-scale {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--navy);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transform: none;
+  will-change: opacity;
+}
+
+.page-transition-overlay.exit {
+  animation: overlay-exit 0.22s linear forwards;
+}
+
+.page-transition-overlay.enter {
+  animation: overlay-enter 0.32s ease-out forwards;
+}
+
+@keyframes overlay-exit {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes overlay-enter {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+.cursor-dot {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: var(--navy);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s var(--ease),
+              height 0.25s var(--ease),
+              background 0.25s var(--ease);
+  will-change: transform;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--silver);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s var(--ease),
+              height 0.3s var(--ease),
+              border-color 0.3s var(--ease),
+              opacity 0.3s var(--ease);
+  will-change: transform;
+}
+
+.cursor-dot.hovering {
+  width: 18px;
+  height: 18px;
+  background: var(--accent);
+}
+
+.cursor-ring.hovering {
+  width: 54px;
+  height: 54px;
+  border-color: var(--accent);
+  opacity: 0.6;
+}
+
+@media (hover: none) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+
+  html {
+    cursor: auto;
+  }
+
+  a, button, [role="button"] {
+    cursor: pointer;
+  }
+}

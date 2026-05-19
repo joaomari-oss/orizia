@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Outfit:wght@200;300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #0B1C35;
+  --navy-mid: #112447;
+  --navy-light: #1A3260;
+  --silver: #A8BAD0;
+  --silver-light: #C8D8EC;
+  --silver-bright: #E2EBF5;
+  --white: #F4F7FC;
+  --cream: #EEF2F8;
+  --accent: #6B91C1;
+  --text-dark: #0B1C35;
+  --text-mid: #2C4268;
+  --text-muted: #7A93B5;
+  --line: rgba(168,186,208,0.2);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  color: var(--text-dark);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Dark-themed pages (contact, score, etc.) */
+body.page-dark {
+  background: var(--navy);
+  color: var(--white);
+}
+body.page-dark::selection,
+body.page-dark *::selection {
+  background: var(--accent);
+  color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, textarea, select {
+  font-family: 'Outfit', sans-serif;
+  cursor: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.eyebrow {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--silver);
+}
+
+.eyebrow--dark {
+  color: var(--text-muted);
+}
+
+.section-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cormorant { font-family: 'Cormorant Garamond', serif; }
+.outfit { font-family: 'Outfit', sans-serif; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  transition: all 0.3s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease);
+  z-index: -1;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn--navy {
+  color: var(--navy);
+  border-color: var(--navy);
+}
+
+.btn--navy:hover {
+  color: var(--white);
+  background: var(--navy);
+}
+
+.btn--silver {
+  color: var(--silver-light);
+  border-color: rgba(168,186,208,0.4);
+}
+
+.btn--silver:hover {
+  color: var(--navy);
+  background: var(--silver-light);
+  border-color: var(--silver-light);
+}
+
+.btn--ghost {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.btn--ghost:hover {
+  color: var(--navy);
+  background: var(--white);
+  border-color: var(--white);
+}
+
+.btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  transition: gap 0.3s var(--ease);
+}
+
+.btn-arrow:hover {
+  gap: 14px;
+}
+
+.btn-arrow::after {
+  content: '→';
+  font-size: 14px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: var(--line);
+}
+
+.text-accent { color: var(--accent); }
+.text-muted { color: var(--text-muted); }
+.text-silver { color: var(--silver); }
+.text-silver-light { color: var(--silver-light); }
+
+.italic { font-style: italic; }
+
+section {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+  /* Prevent horizontal scroll on small phones */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* Tame oversize hero typography globally */
+  h1 {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  /* Buttons full-width on very small screens for tap comfort */
+  .btn {
+    width: auto;
+    max-width: 100%;
+  }
+  /* Tame inline flex footers */
+  footer .container {
+    flex-direction: column;
+    align-items: flex-start !important;
+    text-align: left;
+    gap: 20px !important;
+  }
+  footer nav {
+    flex-wrap: wrap;
+    gap: 16px 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+}

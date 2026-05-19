@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Orizia Consulting</title>
+  <meta name="description" content="Fale com a equipe Orizia. Toda parceria começa com uma conversa honesta.">
+  <style>
+    :root{--navy:#0B1C35;--cream:#EEF2F8;--white:#F4F7FC;--silver:#A8BAD0;--text-dark:#0B1C35;--text-muted:#7A93B5}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{cursor:none}
+    body{font-family:'Outfit',sans-serif;background:var(--navy);color:var(--white)}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Outfit:wght@200;300;400;500&display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/pages/contact.css">
+</head>
+<body class="page-dark">
+
+  <div class="page-transition-overlay"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <nav class="nav nav--dark" role="navigation" aria-label="Navegação principal">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Orizia — Início">
+        <span class="nav__logo-name">ORIZIA</span>
+        <span class="nav__logo-sub">Consulting</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Início</a></li>
+        <li><a href="capabilities.html" class="nav__link">Capacidades</a></li>
+        <li><a href="score.html" class="nav__link">Score</a></li>
+        <li><a href="report.html" class="nav__link">Relatório</a></li>
+      </ul>
+      <button class="nav__lang" data-lang-toggle type="button" aria-label="Trocar idioma">
+        <span class="nav__lang-opt active" data-lang-pt>PT</span>
+        <span class="nav__lang-sep">/</span>
+        <span class="nav__lang-opt" data-lang-en>EN</span>
+      </button>
+      <a href="contact.html" class="nav__cta active">Iniciar conversa</a>
+      <button class="nav__hamburger" aria-label="Abrir menu">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile-overlay" role="dialog" aria-modal="true" aria-label="Navegação mobile">
+    <ul class="nav__mobile-links">
+      <li><a href="../index.html" class="nav__mobile-link">Início</a></li>
+      <li><a href="capabilities.html" class="nav__mobile-link">Capacidades</a></li>
+      <li><a href="score.html" class="nav__mobile-link">Score</a></li>
+      <li><a href="report.html" class="nav__mobile-link">Relatório</a></li>
+    </ul>
+    <a href="contact.html" class="nav__mobile-cta">Iniciar conversa</a>
+    <div class="nav__mobile-bottom">
+      <span class="nav__mobile-bottom-label">Contato</span>
+      <a href="mailto:contato@orizia.com.br" class="nav__mobile-bottom-email">contato@orizia.com.br</a>
+    </div>
+  </div>
+
+  <main class="contact-page">
+    <div class="container">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html" class="page-hero__breadcrumb-item">Início</a>
+        <span class="page-hero__breadcrumb-sep" aria-hidden="true">—</span>
+        <span class="page-hero__breadcrumb-item" aria-current="page">Contato</span>
+      </nav>
+
+      <div class="contact-grid">
+
+        <!-- LEFT -->
+        <aside class="contact-left">
+          <p class="eyebrow reveal" style="margin-bottom:24px;">Entre em contato</p>
+          <h1 class="contact-left__title reveal reveal-delay-1"
+              data-en-html="Every engagement starts with an<br><em>honest conversation.</em>">
+            Toda parceria começa com uma<br><em>conversa honesta.</em>
+          </h1>
+          <p class="contact-left__desc reveal reveal-delay-2">
+            Diga onde está sua operação hoje, o que está te tirando o sono e o que você quer construir. A primeira conversa é gratuita, sem compromisso e — esperamos — útil mesmo que nunca trabalhemos juntos.
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-info__row">
+              <p class="contact-info__label">E-mail</p>
+              <a href="mailto:contato@orizia.com.br" class="contact-info__value">contato@orizia.com.br</a>
+            </div>
+            <div class="contact-info__row">
+              <p class="contact-info__label">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/joaolucamari" target="_blank" rel="noopener" class="contact-info__value">joaolucamari</a>
+            </div>
+            <div class="contact-info__row">
+              <p class="contact-info__label">Localização</p>
+              <p class="contact-info__value">São Paulo &amp; Remoto</p>
+            </div>
+            <div class="contact-info__row">
+              <p class="contact-info__label">Tempo de resposta</p>
+              <p class="contact-info__value">Em até 24 horas</p>
+            </div>
+          </div>
+
+          <blockquote class="contact-quote">
+            <p class="contact-quote__text">"Nunca aceitamos um cliente em quem não acreditamos. Cada parceria que assumimos é aquela em que sabemos que podemos entregar algo real."</p>
+            <cite class="contact-quote__cite">— Equipe Orizia</cite>
+          </blockquote>
+        </aside>
+
+        <!-- RIGHT -->
+        <section class="contact-right">
+          <p class="eyebrow" style="margin-bottom:24px;">Enviar uma mensagem</p>
+          <h2 class="contact-right__title">Conte-nos sobre seu desafio.</h2>
+
+          <form class="contact-form" novalidate>
+            <div class="contact-form__grid">
+              <label class="form-label">
+                <span class="form-label__text">Nome completo *</span>
+                <input type="text" name="name" class="form-input" required>
+              </label>
+              <label class="form-label">
+                <span class="form-label__text">Empresa *</span>
+                <input type="text" name="company" class="form-input" required>
+              </label>
+              <label class="form-label">
+                <span class="form-label__text">Cargo *</span>
+                <input type="text" name="role" class="form-input" required>
+              </label>
+              <label class="form-label">
+                <span class="form-label__text">Telefone (opcional)</span>
+                <input type="tel" name="phone" class="form-input">
+              </label>
+              <label class="form-label form-label--full">
+                <span class="form-label__text">E-mail corporativo *</span>
+                <input type="email" name="email" class="form-input" required>
+              </label>
+            </div>
+
+            <fieldset class="form-fieldset">
+              <legend class="form-fieldset__legend">Como podemos ajudar?</legend>
+              <div class="form-radios">
+                <label class="form-radio"><input type="radio" name="service" value="diagnose"><span>Diagnóstico</span></label>
+                <label class="form-radio"><input type="radio" name="service" value="partnership"><span>Parceria contínua</span></label>
+                <label class="form-radio"><input type="radio" name="service" value="report"><span>Relatório de mercado</span></label>
+                <label class="form-radio"><input type="radio" name="service" value="other"><span>Outro</span></label>
+              </div>
+            </fieldset>
+
+            <label class="form-label">
+              <span class="form-label__text">Qual é o seu principal desafio?</span>
+              <textarea name="message" class="form-input form-input--textarea" rows="5"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn--silver contact-form__submit">Enviar mensagem</button>
+          </form>
+
+          <div class="contact-form__success" hidden>
+            <p class="success__title">Mensagem recebida.</p>
+            <p class="success__desc">Vamos ler com calma e responder em até 24 horas.</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- ALT CONTACT -->
+      <section class="contact-alt">
+        <p class="contact-alt__label">Prefere um caminho mais direto?</p>
+        <div class="contact-alt__links">
+          <a href="mailto:contato@orizia.com.br" class="contact-alt__link">contato@orizia.com.br</a>
+          <span class="contact-alt__sep">·</span>
+          <a href="https://www.linkedin.com/in/joaolucamari" target="_blank" rel="noopener" class="contact-alt__link">LinkedIn</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer style="background:#08152A;padding:48px 0;border-top:1px solid rgba(168,186,208,0.08);">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;">
+      <a href="../index.html" style="display:flex;flex-direction:column;gap:4px;text-decoration:none;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;letter-spacing:0.18em;color:var(--white);">ORIZIA</span>
+        <span style="font-size:8px;letter-spacing:0.45em;text-transform:uppercase;color:var(--text-muted);">Consulting</span>
+      </a>
+      <nav style="display:flex;gap:32px;" aria-label="Navegação do rodapé">
+        <a href="../index.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Início</a>
+        <a href="capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Capacidades</a>
+        <a href="score.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Score</a>
+        <a href="report.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Relatório</a>
+      </nav>
+      <p style="font-size:11px;color:var(--text-muted);letter-spacing:0.05em;">© 2026 Orizia Consulting</p>
+    </div>
+  </footer>
+
+  <script defer src="../js/i18n.js"></script>
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/animations.js"></script>
+  <script defer src="../js/pages/contact.js"></script>
+</body>
+</html>
