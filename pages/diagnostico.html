@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Free Diagnosis — Orizia Consulting">Diagnóstico Gratuito — Orizia Consulting</title>
+  <meta name="description" content="Envie os dados da sua operação e receba o Orizia Score + 3 pontos críticos em até 48 horas. Gratuito, sem compromisso.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joaomari-oss.github.io/orizia/pages/diagnostico.html">
+  <meta property="og:title" content="Diagnóstico Gratuito — Orizia Consulting">
+  <meta property="og:description" content="Envie os dados da sua operação e receba o Orizia Score + 3 pontos críticos em até 48 horas.">
+  <meta property="og:image" content="https://joaomari-oss.github.io/orizia/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://joaomari-oss.github.io/orizia/assets/og-image.png">
+  <style>
+    :root{--navy:#0B1C35;--cream:#EEF2F8;--white:#F4F7FC;--silver:#A8BAD0;--accent:#6B91C1;--text-dark:#0B1C35;--text-muted:#7A93B5}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{cursor:none}
+    body{font-family:'Outfit',sans-serif;background:var(--navy);color:var(--white)}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Outfit:wght@200;300;400;500&display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/pages/diagnostico.css">
+</head>
+<body class="page-dark">
+
+  <div class="page-transition-overlay"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <nav class="nav nav--dark" role="navigation" aria-label="Navegação principal">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Orizia — Início">
+        <span class="nav__logo-name">ORIZIA</span>
+        <span class="nav__logo-sub" data-en="Consulting">Consulting</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link" data-en="Home">Início</a></li>
+        <li><a href="capabilities.html" class="nav__link" data-en="Capabilities">Capacidades</a></li>
+        <li><a href="diagnostico.html" class="nav__link active" data-en="Diagnosis">Diagnóstico</a></li>
+        <li><a href="score.html" class="nav__link" data-en="Score">Score</a></li>
+        <li><a href="report.html" class="nav__link" data-en="Report">Relatório</a></li>
+      </ul>
+      <button class="nav__lang" data-lang-toggle type="button" aria-label="Trocar idioma">
+        <span class="nav__lang-opt active" data-lang-pt>PT</span>
+        <span class="nav__lang-sep">/</span>
+        <span class="nav__lang-opt" data-lang-en>EN</span>
+      </button>
+      <a href="https://app.orizia.com.br" class="nav__cta" target="_blank" rel="noopener" data-en="Client Portal">Portal do Cliente</a>
+      <button class="nav__hamburger" aria-label="Abrir menu">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile-overlay" role="dialog" aria-modal="true" aria-label="Navegação mobile">
+    <ul class="nav__mobile-links">
+      <li><a href="../index.html" class="nav__mobile-link" data-en="Home">Início</a></li>
+      <li><a href="capabilities.html" class="nav__mobile-link" data-en="Capabilities">Capacidades</a></li>
+      <li><a href="diagnostico.html" class="nav__mobile-link" data-en="Diagnosis">Diagnóstico</a></li>
+      <li><a href="score.html" class="nav__mobile-link" data-en="Score">Score</a></li>
+      <li><a href="report.html" class="nav__mobile-link" data-en="Report">Relatório</a></li>
+    </ul>
+    <a href="https://app.orizia.com.br" class="nav__mobile-cta" target="_blank" rel="noopener" data-en="Client Portal">Portal do Cliente</a>
+    <div class="nav__mobile-bottom">
+      <span class="nav__mobile-bottom-label" data-en="Contact">Contato</span>
+      <a href="mailto:contato@orizia.com.br" class="nav__mobile-bottom-email">contato@orizia.com.br</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="diag-hero">
+    <div class="container">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html" class="page-hero__breadcrumb-item" data-en="Home">Início</a>
+        <span class="page-hero__breadcrumb-sep" aria-hidden="true">—</span>
+        <span class="page-hero__breadcrumb-item" aria-current="page" data-en="Free Diagnosis">Diagnóstico Gratuito</span>
+      </nav>
+      <p class="eyebrow reveal" style="margin-bottom:24px;" data-en="Orizia Diagnose — Free">Orizia Diagnose — Gratuito</p>
+      <h1 class="diag-hero__title reveal" data-en-html="Your Score.<br>Your 3 critical points.<br><em>Free in 48h.</em>">
+        Seu Score.<br>
+        Seus 3 pontos críticos.<br>
+        <em>Grátis em 48h.</em>
+      </h1>
+      <p class="diag-hero__subtitle reveal reveal-delay-1" data-en="Send your operation's data. Our AI analyzes, a specialist reviews, and you receive your Orizia Score + 3 actionable critical points — by email and WhatsApp. No commitment, no cost.">
+        Envie os dados da sua operação. Nossa IA analisa, um especialista revisa e você recebe o Orizia Score + 3 pontos críticos acionáveis — por e-mail e WhatsApp. Sem compromisso, sem custo.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORM WRAPPER -->
+  <main class="diag-main">
+    <div class="container">
+
+      <!-- STEPPER -->
+      <div class="diag-stepper" role="navigation" aria-label="Etapas do formulário">
+        <div class="diag-step active" data-step="1" aria-current="step">
+          <div class="diag-step__num">1</div>
+          <span class="diag-step__label" data-en="Identification">Identificação</span>
+        </div>
+        <div class="diag-step__connector" aria-hidden="true"></div>
+        <div class="diag-step" data-step="2">
+          <div class="diag-step__num">2</div>
+          <span class="diag-step__label" data-en="Data Upload">Upload de Dados</span>
+        </div>
+        <div class="diag-step__connector" aria-hidden="true"></div>
+        <div class="diag-step" data-step="3">
+          <div class="diag-step__num">3</div>
+          <span class="diag-step__label" data-en="Confirmation">Confirmação</span>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <form id="diag-form" novalidate enctype="multipart/form-data">
+
+        <!-- Honeypot (a11y hidden) -->
+        <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+          <label>Não preencha este campo <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <!-- ──── STEP 1: IDENTIFICAÇÃO ──── -->
+        <div class="diag-form-step" data-form-step="1" aria-label="Etapa 1: Identificação">
+          <div class="diag-step-header">
+            <h2 class="diag-step-header__title" data-en="Tell us who you are.">Conte-nos quem você é.</h2>
+            <p class="diag-step-header__desc" data-en="We treat your information with strict confidentiality — covered by our standard NDA.">Tratamos suas informações com sigilo estrito — coberto pelo nosso NDA padrão.</p>
+          </div>
+
+          <div class="diag-form-grid">
+            <label class="form-label">
+              <span class="form-label__text" data-en="Full name *">Nome completo *</span>
+              <input type="text" name="nome" class="form-input" required
+                     autocomplete="name"
+                     aria-required="true"
+                     data-en-attr='{"placeholder":"Your full name"}' placeholder="Seu nome completo">
+            </label>
+
+            <label class="form-label">
+              <span class="form-label__text" data-en="Corporate email *">E-mail corporativo *</span>
+              <input type="email" name="email" class="form-input" required
+                     autocomplete="email"
+                     aria-required="true"
+                     data-en-attr='{"placeholder":"you@company.com"}' placeholder="voce@empresa.com.br">
+            </label>
+
+            <label class="form-label">
+              <span class="form-label__text" data-en="WhatsApp (with area code) *">WhatsApp (com DDD) *</span>
+              <input type="tel" name="whatsapp" class="form-input" required
+                     autocomplete="tel"
+                     aria-required="true"
+                     placeholder="(11) 99999-9999">
+            </label>
+
+            <label class="form-label">
+              <span class="form-label__text" data-en="Company *">Empresa *</span>
+              <input type="text" name="empresa" class="form-input" required
+                     autocomplete="organization"
+                     aria-required="true"
+                     data-en-attr='{"placeholder":"Company name"}' placeholder="Nome da empresa">
+            </label>
+
+            <label class="form-label">
+              <span class="form-label__text" data-en="Role / Position *">Cargo / Função *</span>
+              <input type="text" name="cargo" class="form-input" required
+                     autocomplete="organization-title"
+                     aria-required="true"
+                     data-en-attr='{"placeholder":"Your role"}' placeholder="Seu cargo">
+            </label>
+
+            <label class="form-label">
+              <span class="form-label__text" data-en="Segment *">Segmento de atuação *</span>
+              <select name="segmento" class="form-input form-input--select" required aria-required="true">
+                <option value="" disabled selected data-en="Select...">Selecione...</option>
+                <option value="insuretech" data-en="InsureTech">InsureTech</option>
+                <option value="banco" data-en="Bank">Banco</option>
+                <option value="fintech" data-en="Fintech">Fintech</option>
+                <option value="varejo" data-en="Retail">Varejo</option>
+                <option value="agro" data-en="Agro">Agro</option>
+                <option value="telecomunicacoes" data-en="Telecommunications">Telecomunicações</option>
+                <option value="outro" data-en="Other">Outro</option>
+              </select>
+            </label>
+
+            <label class="form-label form-label--full">
+              <span class="form-label__text" data-en="Main distribution channel *">Canal principal de distribuição *</span>
+              <select name="canal" class="form-input form-input--select" required aria-required="true">
+                <option value="" disabled selected data-en="Select...">Selecione...</option>
+                <option value="app" data-en="App">App</option>
+                <option value="internet_banking" data-en="Internet Banking">Internet Banking</option>
+                <option value="pdv" data-en="POS / PDV">PDV</option>
+                <option value="agente" data-en="Agent">Agente</option>
+                <option value="api_b2b" data-en="API B2B">API B2B</option>
+                <option value="outro" data-en="Other">Outro</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="diag-form-actions">
+            <button type="button" class="btn btn--silver diag-next" data-en="Continue to data upload →">
+              Continuar para upload de dados →
+            </button>
+          </div>
+        </div>
+
+        <!-- ──── STEP 2: UPLOAD DE ARQUIVOS ──── -->
+        <div class="diag-form-step" data-form-step="2" hidden aria-label="Etapa 2: Upload de dados">
+          <div class="diag-step-header">
+            <h2 class="diag-step-header__title" data-en="Send your operation's data.">Envie os dados da sua operação.</h2>
+            <p class="diag-step-header__desc" data-en="Minimum 2 of the 4 files below. All data is covered by LGPD and our NDA. Remove CPF/CNPJ before sending.">
+              Mínimo 2 dos 4 arquivos abaixo. Todos os dados são protegidos pela LGPD e pelo nosso NDA. Remova CPF/CNPJ antes de enviar.
+            </p>
+          </div>
+
+          <div class="upload-grid">
+
+            <!-- Carteira -->
+            <div class="upload-card" data-file="carteira">
+              <div class="upload-card__header">
+                <div>
+                  <p class="upload-card__name" data-en="Policy portfolio">carteira.csv</p>
+                  <p class="upload-card__desc" data-en="Active/canceled policies — columns: canal, produto, data_emissao, status, premio">Apólices ativas/canceladas — colunas: canal, produto, data_emissao, status, premio</p>
+                </div>
+                <button type="button" class="upload-example-btn" data-file="carteira" data-en="See example">Ver exemplo</button>
+              </div>
+              <label class="upload-dropzone" for="file-carteira">
+                <input type="file" id="file-carteira" name="carteira" accept=".csv,.txt,text/csv,application/vnd.ms-excel,text/plain" class="upload-input">
+                <div class="upload-dropzone__inner">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 4L16 20M16 4L10 10M16 4L22 10" stroke="#6B91C1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 22V26C6 27.1 6.9 28 8 28H24C25.1 28 26 27.1 26 26V22" stroke="#A8BAD0" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <p class="upload-dropzone__text" data-en="Click or drag your CSV here">Clique ou arraste seu CSV aqui</p>
+                  <p class="upload-dropzone__hint" data-en="Max 10 MB">Máx 10 MB</p>
+                </div>
+                <div class="upload-dropzone__file-name" hidden></div>
+              </label>
+            </div>
+
+            <!-- Cancelamentos -->
+            <div class="upload-card" data-file="cancelamentos">
+              <div class="upload-card__header">
+                <div>
+                  <p class="upload-card__name" data-en="Cancellations">cancelamentos.csv</p>
+                  <p class="upload-card__desc" data-en="Last 12 months — columns: data, motivo, canal, tempo_vida_dias">Últimos 12 meses — colunas: data, motivo, canal, tempo_vida_dias</p>
+                </div>
+                <button type="button" class="upload-example-btn" data-file="cancelamentos" data-en="See example">Ver exemplo</button>
+              </div>
+              <label class="upload-dropzone" for="file-cancelamentos">
+                <input type="file" id="file-cancelamentos" name="cancelamentos" accept=".csv,.txt,text/csv,application/vnd.ms-excel,text/plain" class="upload-input">
+                <div class="upload-dropzone__inner">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 4L16 20M16 4L10 10M16 4L22 10" stroke="#6B91C1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 22V26C6 27.1 6.9 28 8 28H24C25.1 28 26 27.1 26 26V22" stroke="#A8BAD0" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <p class="upload-dropzone__text" data-en="Click or drag your CSV here">Clique ou arraste seu CSV aqui</p>
+                  <p class="upload-dropzone__hint" data-en="Max 10 MB">Máx 10 MB</p>
+                </div>
+                <div class="upload-dropzone__file-name" hidden></div>
+              </label>
+            </div>
+
+            <!-- Sinistros -->
+            <div class="upload-card" data-file="sinistros">
+              <div class="upload-card__header">
+                <div>
+                  <p class="upload-card__name" data-en="Claims">sinistros.csv</p>
+                  <p class="upload-card__desc" data-en="Last 12 months — columns: data_aviso, tipo, valor_pago, status">Últimos 12 meses — colunas: data_aviso, tipo, valor_pago, status</p>
+                </div>
+                <button type="button" class="upload-example-btn" data-file="sinistros" data-en="See example">Ver exemplo</button>
+              </div>
+              <label class="upload-dropzone" for="file-sinistros">
+                <input type="file" id="file-sinistros" name="sinistros" accept=".csv,.txt,text/csv,application/vnd.ms-excel,text/plain" class="upload-input">
+                <div class="upload-dropzone__inner">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 4L16 20M16 4L10 10M16 4L22 10" stroke="#6B91C1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 22V26C6 27.1 6.9 28 8 28H24C25.1 28 26 27.1 26 26V22" stroke="#A8BAD0" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <p class="upload-dropzone__text" data-en="Click or drag your CSV here">Clique ou arraste seu CSV aqui</p>
+                  <p class="upload-dropzone__hint" data-en="Max 10 MB">Máx 10 MB</p>
+                </div>
+                <div class="upload-dropzone__file-name" hidden></div>
+              </label>
+            </div>
+
+            <!-- Adesões -->
+            <div class="upload-card" data-file="adesoes">
+              <div class="upload-card__header">
+                <div>
+                  <p class="upload-card__name" data-en="Adhesions">adesoes.csv</p>
+                  <p class="upload-card__desc" data-en="Offers vs adhesions by channel/month — columns: mes, canal, exposicoes, adesoes">Ofertas vs adesões por canal e mês — colunas: mes, canal, exposicoes, adesoes</p>
+                </div>
+                <button type="button" class="upload-example-btn" data-file="adesoes" data-en="See example">Ver exemplo</button>
+              </div>
+              <label class="upload-dropzone" for="file-adesoes">
+                <input type="file" id="file-adesoes" name="adesoes" accept=".csv,.txt,text/csv,application/vnd.ms-excel,text/plain" class="upload-input">
+                <div class="upload-dropzone__inner">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 4L16 20M16 4L10 10M16 4L22 10" stroke="#6B91C1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 22V26C6 27.1 6.9 28 8 28H24C25.1 28 26 27.1 26 26V22" stroke="#A8BAD0" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <p class="upload-dropzone__text" data-en="Click or drag your CSV here">Clique ou arraste seu CSV aqui</p>
+                  <p class="upload-dropzone__hint" data-en="Max 10 MB">Máx 10 MB</p>
+                </div>
+                <div class="upload-dropzone__file-name" hidden></div>
+              </label>
+            </div>
+          </div>
+
+          <p class="upload-min-notice" id="upload-min-msg" hidden data-en="Please upload at least 2 files to continue.">Por favor, envie ao menos 2 arquivos para continuar.</p>
+
+          <div class="diag-form-actions diag-form-actions--split">
+            <button type="button" class="diag-back btn--ghost-link" data-en="← Back">← Voltar</button>
+            <button type="button" class="btn btn--silver diag-next" data-en="Continue to confirmation →">
+              Continuar para confirmação →
+            </button>
+          </div>
+        </div>
+
+        <!-- ──── STEP 3: CONFIRMAÇÃO ──── -->
+        <div class="diag-form-step" data-form-step="3" hidden aria-label="Etapa 3: Confirmação">
+          <div class="diag-step-header">
+            <h2 class="diag-step-header__title" data-en="Review and send.">Revise e envie.</h2>
+            <p class="diag-step-header__desc" data-en="Check your information below, accept the terms and send. Your diagnosis will be delivered in up to 48 hours.">
+              Confira suas informações abaixo, aceite os termos e envie. Seu diagnóstico será entregue em até 48 horas.
+            </p>
+          </div>
+
+          <!-- Summary -->
+          <div class="diag-summary" id="diag-summary" aria-label="Resumo dos dados enviados">
+            <div class="diag-summary__section">
+              <p class="diag-summary__label" data-en="Identification">Identificação</p>
+              <div class="diag-summary__fields" id="summary-identification"></div>
+            </div>
+            <div class="diag-summary__section">
+              <p class="diag-summary__label" data-en="Files sent">Arquivos enviados</p>
+              <div class="diag-summary__files" id="summary-files"></div>
+            </div>
+          </div>
+
+          <!-- NDA + DPA -->
+          <div class="diag-consents">
+            <label class="diag-consent-check">
+              <input type="checkbox" name="aceite_nda_dpa" id="aceite-nda" required aria-required="true">
+              <span class="diag-consent-check__box" aria-hidden="true"></span>
+              <span class="diag-consent-check__text">
+                Li e aceito o <a href="privacidade.html" target="_blank" class="diag-consent-link" data-en="NDA and Data Processing Agreement (LGPD)">NDA e o Acordo de Tratamento de Dados (LGPD)</a>. Compreendo que meus arquivos serão usados exclusivamente para produzir o diagnóstico Orizia e serão excluídos em até 90 dias.
+              </span>
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <div class="diag-form-actions diag-form-actions--split">
+            <button type="button" class="diag-back btn--ghost-link" data-en="← Back">← Voltar</button>
+            <button type="submit" class="btn btn--silver diag-submit" id="diag-submit" data-en="Send for analysis →">
+              <span class="diag-submit__label">Enviar para análise →</span>
+              <span class="diag-submit__loading" hidden aria-live="polite">Enviando…</span>
+            </button>
+          </div>
+
+          <p class="diag-privacy-note" data-en="Your data is protected under LGPD and our standard NDA. We will never share your information with third parties.">
+            Seus dados são protegidos pela LGPD e pelo nosso NDA padrão. Nunca compartilhamos suas informações com terceiros.
+          </p>
+        </div>
+
+      </form>
+
+      <!-- SUCCESS STATE -->
+      <div class="diag-success" id="diag-success" hidden aria-live="polite">
+        <div class="diag-success__icon" aria-hidden="true">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="31" stroke="#6B91C1" stroke-width="1.5"/>
+            <path d="M20 32L28 40L44 24" stroke="#6B91C1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h2 class="diag-success__title" data-en="Received. Analysis in progress.">Recebido. Análise em andamento.</h2>
+        <p class="diag-success__desc" data-en="You'll receive your Orizia Score + 3 critical points by email and WhatsApp within 48 hours. Check your inbox — the notification comes from diagnostico@orizia.com.br.">
+          Você receberá seu Orizia Score + 3 pontos críticos por e-mail e WhatsApp em até 48 horas. Fique de olho na caixa de entrada — a notificação vem de diagnostico@orizia.com.br.
+        </p>
+        <a href="../index.html" class="btn btn--silver" data-en="Back to home →">Voltar ao início →</a>
+      </div>
+
+      <!-- ERROR STATE -->
+      <div class="diag-error-banner" id="diag-error-banner" hidden role="alert">
+        <p class="diag-error-banner__text" id="diag-error-text"></p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ──── MODAIS DE EXEMPLO CSV ──── -->
+  <div class="csv-modal-overlay" id="csv-modal-overlay" role="dialog" aria-modal="true" hidden>
+    <div class="csv-modal">
+      <button class="csv-modal__close" id="csv-modal-close" aria-label="Fechar modal">×</button>
+      <p class="csv-modal__title" id="csv-modal-title"></p>
+      <p class="csv-modal__subtitle" id="csv-modal-subtitle"></p>
+      <pre class="csv-modal__code" id="csv-modal-code"></pre>
+      <p class="csv-modal__tip" data-en="💡 Remove CPF/CNPJ and other personal identifiers before sending.">💡 Remova CPF/CNPJ e outros identificadores pessoais antes de enviar.</p>
+    </div>
+  </div>
+
+  <footer style="background:#08152A;padding:48px 0;border-top:1px solid rgba(168,186,208,0.08);">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;">
+      <a href="../index.html" style="display:flex;flex-direction:column;gap:4px;text-decoration:none;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;letter-spacing:0.18em;color:var(--white);">ORIZIA</span>
+        <span style="font-size:8px;letter-spacing:0.45em;text-transform:uppercase;color:var(--text-muted);" data-en="Consulting">Consulting</span>
+      </a>
+      <nav style="display:flex;gap:32px;flex-wrap:wrap;" aria-label="Navegação do rodapé">
+        <a href="capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Capabilities">Capacidades</a>
+        <a href="score.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Score">Score</a>
+        <a href="report.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Report">Relatório</a>
+        <a href="contact.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Contact">Contato</a>
+        <a href="privacidade.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Privacy">Privacidade</a>
+      </nav>
+      <p style="font-size:11px;color:var(--text-muted);letter-spacing:0.05em;">© 2026 Orizia Consulting</p>
+    </div>
+  </footer>
+
+  <script defer src="../js/i18n.js"></script>
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/animations.js"></script>
+  <script defer src="../js/pages/diagnostico.js"></script>
+</body>
+</html>

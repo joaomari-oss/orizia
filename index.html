@@ -66,6 +66,7 @@
       <ul class="nav__links">
         <li><a href="index.html" class="nav__link active" data-en="Home">Início</a></li>
         <li><a href="pages/capabilities.html" class="nav__link" data-en="Capabilities">Capacidades</a></li>
+        <li><a href="pages/diagnostico.html" class="nav__link" data-en="Diagnosis">Diagnóstico</a></li>
         <li><a href="pages/score.html" class="nav__link" data-en="Score">Score</a></li>
         <li><a href="pages/report.html" class="nav__link" data-en="Report">Relatório</a></li>
       </ul>
@@ -74,7 +75,7 @@
         <span class="nav__lang-sep">/</span>
         <span class="nav__lang-opt" data-lang-en>EN</span>
       </button>
-      <a href="pages/contact.html" class="nav__cta" data-en="Start a conversation">Iniciar conversa</a>
+      <a href="https://app.orizia.com.br" class="nav__cta" target="_blank" rel="noopener" data-en="Client Portal">Portal do Cliente</a>
       <button class="nav__hamburger" aria-label="Abrir menu">
         <span class="nav__hamburger-line"></span>
         <span class="nav__hamburger-line"></span>
@@ -87,10 +88,11 @@
     <ul class="nav__mobile-links">
       <li><a href="index.html" class="nav__mobile-link" data-en="Home">Início</a></li>
       <li><a href="pages/capabilities.html" class="nav__mobile-link" data-en="Capabilities">Capacidades</a></li>
+      <li><a href="pages/diagnostico.html" class="nav__mobile-link" data-en="Diagnosis">Diagnóstico</a></li>
       <li><a href="pages/score.html" class="nav__mobile-link" data-en="Score">Score</a></li>
       <li><a href="pages/report.html" class="nav__mobile-link" data-en="Report">Relatório</a></li>
     </ul>
-    <a href="pages/contact.html" class="nav__mobile-cta" data-en="Start a conversation">Iniciar conversa</a>
+    <a href="https://app.orizia.com.br" class="nav__mobile-cta" target="_blank" rel="noopener" data-en="Client Portal">Portal do Cliente</a>
     <div class="nav__mobile-bottom">
       <span class="nav__mobile-bottom-label" data-en="Contact">Contato</span>
       <a href="mailto:contato@orizia.com.br" class="nav__mobile-bottom-email">contato@orizia.com.br</a>
@@ -126,24 +128,22 @@
         <div class="hero__stat reveal reveal-delay-1">
           <div class="hero__stat-bar" aria-hidden="true"></div>
           <div class="hero__stat-content">
-            <span class="hero__stat-number">
-              <span data-count="340" data-suffix="M+">340M+</span>
-            </span>
-            <p class="hero__stat-label" data-en="Insurance data points processed across the Brazilian embedded market">Pontos de dados de seguros processados no mercado embarcado brasileiro</p>
+            <span class="hero__stat-number">R$&nbsp;223bi</span>
+            <p class="hero__stat-label" data-en="Brazilian insurance market in 2025 — the largest in Latin America (CNSeg/SUSEP)">Mercado segurador brasileiro em 2025 — o maior da América Latina (CNSeg/SUSEP)</p>
           </div>
         </div>
         <div class="hero__stat reveal reveal-delay-2">
           <div class="hero__stat-bar" aria-hidden="true"></div>
           <div class="hero__stat-content">
-            <span class="hero__stat-number">28%</span>
-            <p class="hero__stat-label" data-en="Average reduction in policy churn within the first 90 days of engagement">Redução média do churn de apólices nos primeiros 90 dias de engajamento</p>
+            <span class="hero__stat-number">26%</span>
+            <p class="hero__stat-label" data-en="Annual growth rate of embedded finance in Brazil through 2029 — insurance is the fastest-growing segment">CAGR do embedded finance no Brasil até 2029 — seguros é o segmento de maior crescimento</p>
           </div>
         </div>
         <div class="hero__stat reveal reveal-delay-3">
           <div class="hero__stat-bar" aria-hidden="true"></div>
           <div class="hero__stat-content">
-            <span class="hero__stat-number">6</span>
-            <p class="hero__stat-label" data-en="Proprietary intelligence frameworks covering the full insurance lifecycle">Frameworks proprietários cobrindo todo o ciclo do seguro</p>
+            <span class="hero__stat-number">R$&nbsp;350M+</span>
+            <p class="hero__stat-label" data-en="Invested in Brazilian insurtechs in 2025 alone — more than double 2024 (ABStartups)">Investidos em insurtechs brasileiras só em 2025 — mais que o dobro de 2024 (ABStartups)</p>
           </div>
         </div>
       </div>
@@ -201,8 +201,8 @@
       <div class="capabilities-preview__header">
         <div>
           <p class="eyebrow reveal" style="margin-bottom:16px;" data-en="What we do">O que fazemos</p>
-          <h2 class="capabilities-preview__title reveal reveal-delay-1" id="cap-title" data-en-html="Six frameworks.<br><em>One integrated intelligence.</em>">
-            Seis frameworks.<br><em>Uma inteligência integrada.</em>
+          <h2 class="capabilities-preview__title reveal reveal-delay-1" id="cap-title" data-en-html="Four pillars.<br><em>One integrated intelligence.</em>">
+            Quatro pilares.<br><em>Uma inteligência integrada.</em>
           </h2>
         </div>
         <a href="pages/capabilities.html" class="btn-arrow reveal reveal-delay-2" style="color:var(--silver);margin-bottom:8px;" data-en="Explore all capabilities">
@@ -211,34 +211,31 @@
       </div>
       <div class="capabilities-grid">
         <div class="capability-card">
-          <p class="capability-card__number">01</p>
+          <p class="capability-card__number">
+            01
+            <span class="capability-card__badge" data-en="Free">Grátis</span>
+          </p>
           <h3 class="capability-card__title">Orizia Diagnose</h3>
-          <p class="capability-card__desc" data-en="A complete operational audit of your embedded insurance portfolio — mapping losses, gaps, and opportunities across every dimension of your operation.">Auditoria operacional completa da sua carteira de seguros embarcados — mapeando perdas, lacunas e oportunidades em cada dimensão da operação.</p>
+          <p class="capability-card__desc" data-en="Free in 48h: submit your data, our AI returns your Orizia Score + the 3 critical points of your operation. Full action plan available in the complete engagement.">Gratuito em 48h: envie seus dados, nossa IA retorna o Orizia Score + os 3 pontos críticos da operação. Plano de ação completo disponível no engajamento pago.</p>
+          <span class="capability-card__arrow" aria-hidden="true" data-en="Start free diagnosis →">Iniciar diagnóstico gratuito →</span>
         </div>
         <div class="capability-card">
           <p class="capability-card__number">02</p>
           <h3 class="capability-card__title">Orizia Retain</h3>
-          <p class="capability-card__desc" data-en="A predictive churn model calibrated to the specific rhythms of embedded insurance behavior in Brazil. Know who is about to leave before they decide to.">Modelo preditivo de churn calibrado para o comportamento específico do seguro embarcado no Brasil. Saiba quem está prestes a sair antes que decidam.</p>
+          <p class="capability-card__desc" data-en="Action plan to reduce policy cancellations — based on your data, not generic best practices. We identify the triggers, prioritize the interventions, measure the results.">Plano de ação para reduzir cancelamento de apólices — com base nos seus dados. Identificamos os gatilhos de churn e priorizamos as intervenções certas.</p>
+          <span class="capability-card__arrow" aria-hidden="true" data-en="Learn more →">Saiba mais →</span>
         </div>
         <div class="capability-card">
           <p class="capability-card__number">03</p>
           <h3 class="capability-card__title">Orizia Convert</h3>
-          <p class="capability-card__desc" data-en="Conversion intelligence that tells you not just what's working, but exactly why — and how to systematically replicate it at scale across every channel.">Inteligência de conversão que mostra não só o que funciona, mas exatamente por quê — e como replicar isso em escala em todos os canais.</p>
+          <p class="capability-card__desc" data-en="Action plan to grow your policyholder base — from UX and messaging to new channels and market positioning. Everything that moves adhesion, with evidence.">Plano de ação para crescer a base de segurados — de UX e comunicação a novos canais e posicionamento de mercado. Tudo que move a adesão, com evidência.</p>
+          <span class="capability-card__arrow" aria-hidden="true" data-en="Learn more →">Saiba mais →</span>
         </div>
         <div class="capability-card">
           <p class="capability-card__number">04</p>
-          <h3 class="capability-card__title">Orizia Pulse</h3>
-          <p class="capability-card__desc" data-en="Continuous portfolio monitoring with intelligent alerts. The operational health of your insurance embedded operation tracked in real time, every week.">Monitoramento contínuo da carteira com alertas inteligentes. A saúde operacional do seu seguro embarcado acompanhada em tempo real, toda semana.</p>
-        </div>
-        <div class="capability-card">
-          <p class="capability-card__number">05</p>
-          <h3 class="capability-card__title">Orizia Score</h3>
-          <p class="capability-card__desc" data-en="A single composite score that synthesizes the health of your entire embedded operation into one decisive number, updated monthly.">Um único score composto que sintetiza a saúde de toda a operação embarcada em um número decisivo, atualizado mensalmente.</p>
-        </div>
-        <div class="capability-card">
-          <p class="capability-card__number">06</p>
-          <h3 class="capability-card__title">Orizia Intelligence</h3>
-          <p class="capability-card__desc" data-en="We don't just deliver insights — we build the analytical infrastructure that lets your team generate them independently, at the pace your market demands.">Não entregamos só insights — construímos a infraestrutura analítica para que sua equipe os gere de forma independente, no ritmo que o mercado exige.</p>
+          <h3 class="capability-card__title">Orizia Acompanhamento</h3>
+          <p class="capability-card__desc" data-en="Continuous intelligence as a routine — monthly Score updates, executive analysis, action plan tracking, and a monthly alignment meeting with your team.">Inteligência contínua como rotina — Score mensal atualizado, análise executiva, acompanhamento do plano de ação e reunião mensal com seu time.</p>
+          <span class="capability-card__arrow" aria-hidden="true" data-en="Learn more →">Saiba mais →</span>
         </div>
       </div>
     </div>
@@ -248,38 +245,37 @@
   <section class="score-teaser" aria-labelledby="score-teaser-title">
     <div class="score-teaser__inner">
       <div class="score-teaser__left">
-        <p class="section-label score-teaser__label reveal-left">Orizia Score</p>
-        <h2 class="score-teaser__title reveal-left reveal-delay-1" id="score-teaser-title" data-en-html="One number.<br>The complete<br><em>picture.</em>">
-          Um número.<br>
-          O quadro<br>
-          <em>completo.</em>
+        <p class="section-label score-teaser__label reveal-left">Orizia Diagnose — Gratuito</p>
+        <h2 class="score-teaser__title reveal-left reveal-delay-1" id="score-teaser-title" data-en-html="48 hours.<br>Your score.<br><em>Free.</em>">
+          48 horas.<br>
+          Seu score.<br>
+          <em>De graça.</em>
         </h2>
-        <p class="score-teaser__desc reveal-left reveal-delay-2" data-en="The Orizia Score synthesizes churn risk, adhesion rate, product-market fit and portfolio health into a single monthly indicator — your dashboard for the entire embedded operation.">
-          O Orizia Score sintetiza risco de churn, taxa de adesão, fit de produto e saúde da carteira em um único indicador mensal — o painel de toda a sua operação embarcada.
+        <p class="score-teaser__desc reveal-left reveal-delay-2" data-en="Submit your operation's data and our AI returns your Orizia Score — synthesizing churn, adhesion, product fit and portfolio health — plus the 3 critical points that most impact your operation. No commitment required.">
+          Envie os dados da sua operação e nossa IA retorna o Orizia Score — sintetizando churn, adesão, fit de produto e saúde da carteira — mais os 3 pontos críticos que mais impactam o seu negócio. Sem compromisso.
         </p>
-        <a href="pages/score.html" class="btn btn--navy reveal-left reveal-delay-3" data-en="Explore the Score">Explorar o Score</a>
+        <a href="pages/diagnostico.html" class="btn btn--navy reveal-left reveal-delay-3" data-en="Start your free diagnosis">Iniciar diagnóstico gratuito</a>
 
-        <!-- Filler content (item 2) -->
-        <ul class="score-teaser__highlights reveal-left reveal-delay-4" aria-label="Destaques do Orizia Score">
+        <ul class="score-teaser__highlights reveal-left reveal-delay-4" aria-label="Como funciona o diagnóstico gratuito">
           <li class="score-teaser__highlight">
             <span class="score-teaser__highlight-num">01</span>
             <div>
-              <p class="score-teaser__highlight-title" data-en="Sector-calibrated">Calibrado ao setor</p>
-              <p class="score-teaser__highlight-text" data-en="Benchmarked monthly against 340M+ data points from the Brazilian embedded market.">Comparado mensalmente a mais de 340M de pontos de dados do mercado embarcado brasileiro.</p>
+              <p class="score-teaser__highlight-title" data-en="You send the data">Você envia os dados</p>
+              <p class="score-teaser__highlight-text" data-en="Portfolio file, cancellations, claims and adhesion rates — we tell you exactly what to send.">Arquivo de carteira, cancelamentos, sinistros e taxas de adesão — dizemos exatamente o que enviar.</p>
             </div>
           </li>
           <li class="score-teaser__highlight">
             <span class="score-teaser__highlight-num">02</span>
             <div>
-              <p class="score-teaser__highlight-title" data-en="Decision-ready">Pronto para decisão</p>
-              <p class="score-teaser__highlight-text" data-en="Each monthly delivery comes with a two-page brief and one recommended action.">Cada entrega mensal vem com um resumo de duas páginas e uma ação recomendada.</p>
+              <p class="score-teaser__highlight-title" data-en="AI analyzes in 48h">IA analisa em 48h</p>
+              <p class="score-teaser__highlight-text" data-en="Our model processes your data and calculates your score against sector benchmarks.">Nosso modelo processa seus dados e calcula o score comparado ao benchmark do setor.</p>
             </div>
           </li>
           <li class="score-teaser__highlight">
             <span class="score-teaser__highlight-num">03</span>
             <div>
-              <p class="score-teaser__highlight-title" data-en="Always evolving">Sempre evoluindo</p>
-              <p class="score-teaser__highlight-text" data-en="Weights re-balance as your operation matures, keeping the score relevant over time.">Os pesos se rebalanceiam conforme sua operação amadurece, mantendo o score relevante.</p>
+              <p class="score-teaser__highlight-title" data-en="You receive by email and WhatsApp">Você recebe por e-mail e WhatsApp</p>
+              <p class="score-teaser__highlight-text" data-en="Score + the 3 critical points of your operation. Want the full plan? We move to the complete engagement.">Score + os 3 pontos críticos da sua operação. Quer o plano completo? Avançamos para o engajamento completo.</p>
             </div>
           </li>
         </ul>
@@ -476,11 +472,13 @@
         <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;letter-spacing:0.18em;color:var(--white);">ORIZIA</span>
         <span style="font-size:8px;letter-spacing:0.45em;text-transform:uppercase;color:var(--text-muted);" data-en="Consulting">Consulting</span>
       </div>
-      <nav style="display:flex;gap:32px;" aria-label="Navegação do rodapé">
-        <a href="pages/capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;transition:color 0.3s ease;" data-en="Capabilities">Capacidades</a>
-        <a href="pages/score.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;transition:color 0.3s ease;" data-en="Score">Score</a>
-        <a href="pages/report.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;transition:color 0.3s ease;" data-en="Report">Relatório</a>
-        <a href="pages/contact.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;transition:color 0.3s ease;" data-en="Contact">Contato</a>
+      <nav style="display:flex;gap:32px;flex-wrap:wrap;" aria-label="Navegação do rodapé">
+        <a href="pages/capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Capabilities">Capacidades</a>
+        <a href="pages/diagnostico.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Diagnosis">Diagnóstico</a>
+        <a href="pages/score.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Score">Score</a>
+        <a href="pages/report.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Report">Relatório</a>
+        <a href="pages/contact.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Contact">Contato</a>
+        <a href="pages/privacidade.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Privacy">Privacidade</a>
       </nav>
       <p style="font-size:11px;color:var(--text-muted);letter-spacing:0.05em;">© 2026 Orizia Consulting</p>
     </div>

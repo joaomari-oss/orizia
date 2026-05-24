@@ -48,17 +48,18 @@
         <span class="nav__logo-sub">Consulting</span>
       </a>
       <ul class="nav__links">
-        <li><a href="../index.html" class="nav__link">Início</a></li>
-        <li><a href="capabilities.html" class="nav__link">Capacidades</a></li>
-        <li><a href="score.html" class="nav__link">Score</a></li>
-        <li><a href="report.html" class="nav__link active">Relatório</a></li>
+        <li><a href="../index.html" class="nav__link" data-en="Home">Início</a></li>
+        <li><a href="capabilities.html" class="nav__link" data-en="Capabilities">Capacidades</a></li>
+        <li><a href="diagnostico.html" class="nav__link" data-en="Diagnosis">Diagnóstico</a></li>
+        <li><a href="score.html" class="nav__link" data-en="Score">Score</a></li>
+        <li><a href="report.html" class="nav__link active" data-en="Report">Relatório</a></li>
       </ul>
       <button class="nav__lang" data-lang-toggle type="button" aria-label="Trocar idioma">
         <span class="nav__lang-opt active" data-lang-pt>PT</span>
         <span class="nav__lang-sep">/</span>
         <span class="nav__lang-opt" data-lang-en>EN</span>
       </button>
-      <a href="contact.html" class="nav__cta">Iniciar conversa</a>
+      <a href="https://app.orizia.com.br" class="nav__cta" target="_blank" rel="noopener" data-en="Client Portal">Portal do Cliente</a>
       <button class="nav__hamburger" aria-label="Abrir menu">
         <span class="nav__hamburger-line"></span>
         <span class="nav__hamburger-line"></span>
@@ -69,12 +70,13 @@
 
   <div class="nav__mobile-overlay" role="dialog" aria-modal="true" aria-label="Navegação mobile">
     <ul class="nav__mobile-links">
-      <li><a href="../index.html" class="nav__mobile-link">Início</a></li>
-      <li><a href="capabilities.html" class="nav__mobile-link">Capacidades</a></li>
-      <li><a href="score.html" class="nav__mobile-link">Score</a></li>
-      <li><a href="report.html" class="nav__mobile-link">Relatório</a></li>
+      <li><a href="../index.html" class="nav__mobile-link" data-en="Home">Início</a></li>
+      <li><a href="capabilities.html" class="nav__mobile-link" data-en="Capabilities">Capacidades</a></li>
+      <li><a href="diagnostico.html" class="nav__mobile-link" data-en="Diagnosis">Diagnóstico</a></li>
+      <li><a href="score.html" class="nav__mobile-link" data-en="Score">Score</a></li>
+      <li><a href="report.html" class="nav__mobile-link" data-en="Report">Relatório</a></li>
     </ul>
-    <a href="contact.html" class="nav__mobile-cta">Iniciar conversa</a>
+    <a href="https://app.orizia.com.br" class="nav__mobile-cta" target="_blank" rel="noopener" data-en="Client Portal">Portal do Cliente</a>
     <div class="nav__mobile-bottom">
       <span class="nav__mobile-bottom-label">Contato</span>
       <a href="mailto:contato@orizia.com.br" class="nav__mobile-bottom-email">contato@orizia.com.br</a>
@@ -181,37 +183,104 @@
     </div>
   </section>
 
-  <!-- ACCESS FORM -->
-  <section class="report-access">
+  <!-- NEWSLETTER SUBSCRIPTION -->
+  <section class="report-subscribe" aria-labelledby="sub-title" style="padding:100px 0;background:var(--navy);border-top:1px solid rgba(168,186,208,0.08);">
+    <div class="container">
+      <div class="report-access">
+        <div class="report-access__left">
+          <p class="eyebrow" style="margin-bottom:24px;" data-en="Subscribe">Assine</p>
+          <h2 class="report-access__title" id="sub-title"
+              data-en-html="Receive every<br>edition.">
+            Receba cada<br>edição.
+          </h2>
+          <p class="report-access__desc" data-en="Subscribe to the Orizia Market Report and receive the monthly edition directly in your email — with benchmarks, regulatory signals, and the sector score.">
+            Assine o Orizia Market Report e receba a edição mensal direto no seu e-mail — com benchmarks, sinais regulatórios e o score do setor.
+          </p>
+          <p class="report-access__desc" style="margin-top:12px;font-size:12px;color:var(--text-muted);" data-en="Your data is protected by LGPD. Unsubscribe at any time.">Seus dados são protegidos pela LGPD. Cancele a qualquer momento.</p>
+        </div>
+        <form class="report-access__form" id="newsletter-form" novalidate>
+          <!-- honeypot -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="form-row">
+            <label class="form-label">
+              <span class="form-label__text" data-en="Full name *">Nome completo *</span>
+              <input type="text" name="nome" class="form-input" required
+                     data-en-attr='{"placeholder":"Your name"}' placeholder="Seu nome">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-label">
+              <span class="form-label__text" data-en="Corporate email *">E-mail corporativo *</span>
+              <input type="email" name="email" class="form-input" required
+                     data-en-attr='{"placeholder":"you@company.com"}' placeholder="voce@empresa.com.br">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-label">
+              <span class="form-label__text" data-en="Company">Empresa</span>
+              <input type="text" name="empresa" class="form-input"
+                     data-en-attr='{"placeholder":"Company name"}' placeholder="Nome da empresa">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-label">
+              <span class="form-label__text" data-en="Role">Cargo</span>
+              <input type="text" name="cargo" class="form-input"
+                     data-en-attr='{"placeholder":"Your role"}' placeholder="Seu cargo">
+            </label>
+          </div>
+          <label style="display:flex;align-items:flex-start;gap:12px;margin-bottom:28px;cursor:none;">
+            <input type="checkbox" name="aceite_lgpd" required style="margin-top:3px;accent-color:var(--accent);">
+            <span style="font-size:12px;font-weight:300;color:var(--text-muted);line-height:1.7;" data-en="I agree to receive the monthly report and accept the privacy policy.">
+              Aceito receber o relatório mensal e concordo com a <a href="privacidade.html" style="color:var(--accent);text-decoration:underline;" data-en="privacy policy">política de privacidade</a>.
+            </span>
+          </label>
+          <button type="submit" class="btn btn--silver" id="newsletter-submit" data-en="Subscribe to the next edition →">Assinar próxima edição →</button>
+          <div id="newsletter-success" hidden style="margin-top:20px;padding:16px 20px;border:1px solid rgba(107,145,193,0.3);background:rgba(107,145,193,0.08);">
+            <p style="font-size:13px;color:var(--accent);" data-en="Subscribed! You'll receive the next edition by email.">Inscrito! Você receberá a próxima edição por e-mail.</p>
+          </div>
+          <div id="newsletter-error" hidden style="margin-top:20px;padding:16px 20px;border:1px solid rgba(220,80,80,0.3);">
+            <p style="font-size:13px;color:rgba(255,140,140,0.9);" data-en="Error submitting. Please try again or email us.">Erro ao enviar. Por favor, tente novamente ou envie e-mail para contato@orizia.com.br.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS FORM (NDA/Limited) -->
+  <section class="report-access" style="padding:80px 0 100px;">
     <div class="container">
       <div class="report-access__left">
-        <p class="eyebrow" style="margin-bottom:24px;">Acesso</p>
+        <p class="eyebrow" style="margin-bottom:24px;" data-en="Limited access — NDA">Acesso limitado — NDA</p>
         <h2 class="report-access__title"
-            data-en-html="Request the next<br>edition.">
-          Solicite a próxima<br>edição.
+            data-en-html="Request private<br>access.">
+          Solicite acesso<br>restrito.
         </h2>
-        <p class="report-access__desc">O relatório é distribuído sob NDA para um número limitado de operações e investidores por edição. Solicite acesso e nossa equipe entrará em contato em até 48 horas.</p>
+        <p class="report-access__desc" data-en="For investors and operations that need custom data sets or early access to unpublished data. Distributed under NDA to a limited number of organizations per edition.">Para investidores e operações que precisam de dados customizados ou acesso antecipado a dados não publicados. Distribuído sob NDA para um número limitado de organizações por edição.</p>
       </div>
-      <form class="report-access__form" novalidate>
+      <form class="report-access__form" action="https://formspree.io/f/xpwranwq" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Acesso Relatório NDA — Orizia">
+        <input type="hidden" name="_next" value="https://joaomari-oss.github.io/orizia/pages/obrigado.html">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <label class="form-label">
-            <span class="form-label__text">Nome completo</span>
+            <span class="form-label__text" data-en="Full name">Nome completo</span>
             <input type="text" name="name" class="form-input" required>
           </label>
         </div>
         <div class="form-row">
           <label class="form-label">
-            <span class="form-label__text">Empresa</span>
+            <span class="form-label__text" data-en="Company">Empresa</span>
             <input type="text" name="company" class="form-input" required>
           </label>
         </div>
         <div class="form-row">
           <label class="form-label">
-            <span class="form-label__text">E-mail corporativo</span>
+            <span class="form-label__text" data-en="Corporate email">E-mail corporativo</span>
             <input type="email" name="email" class="form-input" required>
           </label>
         </div>
-        <button type="submit" class="btn btn--silver">Solicitar acesso à próxima edição</button>
+        <button type="submit" class="btn btn--silver" data-en="Request access to the next edition →">Solicitar acesso à próxima edição →</button>
       </form>
     </div>
   </section>
@@ -222,11 +291,13 @@
         <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;letter-spacing:0.18em;color:var(--white);">ORIZIA</span>
         <span style="font-size:8px;letter-spacing:0.45em;text-transform:uppercase;color:var(--text-muted);">Consulting</span>
       </a>
-      <nav style="display:flex;gap:32px;" aria-label="Navegação do rodapé">
-        <a href="../index.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Início</a>
-        <a href="capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Capacidades</a>
-        <a href="score.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Score</a>
-        <a href="contact.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Contato</a>
+      <nav style="display:flex;gap:32px;flex-wrap:wrap;" aria-label="Navegação do rodapé">
+        <a href="../index.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Home">Início</a>
+        <a href="capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Capabilities">Capacidades</a>
+        <a href="diagnostico.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Diagnosis">Diagnóstico</a>
+        <a href="score.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Score">Score</a>
+        <a href="contact.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Contact">Contato</a>
+        <a href="privacidade.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Privacy">Privacidade</a>
       </nav>
       <p style="font-size:11px;color:var(--text-muted);letter-spacing:0.05em;">© 2026 Orizia Consulting</p>
     </div>
@@ -235,5 +306,54 @@
   <script defer src="../js/i18n.js"></script>
   <script defer src="../js/main.js"></script>
   <script defer src="../js/animations.js"></script>
+  <script>
+  (function() {
+    var form = document.getElementById('newsletter-form');
+    var submitBtn = document.getElementById('newsletter-submit');
+    var successEl = document.getElementById('newsletter-success');
+    var errorEl   = document.getElementById('newsletter-error');
+    if (!form) return;
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value) return;
+      var email = form.querySelector('[name="email"]');
+      if (!email || !email.value) return;
+
+      submitBtn.disabled = true;
+      var originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Enviando…';
+      successEl.hidden = true;
+      errorEl.hidden = true;
+
+      try {
+        var data = {
+          email: form.querySelector('[name="email"]').value,
+          nome: (form.querySelector('[name="nome"]') || {}).value || '',
+          empresa: (form.querySelector('[name="empresa"]') || {}).value || '',
+          cargo: (form.querySelector('[name="cargo"]') || {}).value || '',
+          origem: 'report_page'
+        };
+        var resp = await fetch('https://api.orizia.com.br/api/newsletter/relatorio', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (resp.ok) {
+          successEl.hidden = false;
+          form.reset();
+        } else {
+          errorEl.hidden = false;
+        }
+      } catch(err) {
+        errorEl.hidden = false;
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    });
+  })();
+  </script>
 </body>
 </html>

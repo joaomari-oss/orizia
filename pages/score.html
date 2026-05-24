@@ -48,17 +48,18 @@
         <span class="nav__logo-sub">Consulting</span>
       </a>
       <ul class="nav__links">
-        <li><a href="../index.html" class="nav__link">Início</a></li>
-        <li><a href="capabilities.html" class="nav__link">Capacidades</a></li>
-        <li><a href="score.html" class="nav__link active">Score</a></li>
-        <li><a href="report.html" class="nav__link">Relatório</a></li>
+        <li><a href="../index.html" class="nav__link" data-en="Home">Início</a></li>
+        <li><a href="capabilities.html" class="nav__link" data-en="Capabilities">Capacidades</a></li>
+        <li><a href="diagnostico.html" class="nav__link" data-en="Diagnosis">Diagnóstico</a></li>
+        <li><a href="score.html" class="nav__link active" data-en="Score">Score</a></li>
+        <li><a href="report.html" class="nav__link" data-en="Report">Relatório</a></li>
       </ul>
       <button class="nav__lang" data-lang-toggle type="button" aria-label="Trocar idioma">
         <span class="nav__lang-opt active" data-lang-pt>PT</span>
         <span class="nav__lang-sep">/</span>
         <span class="nav__lang-opt" data-lang-en>EN</span>
       </button>
-      <a href="contact.html" class="nav__cta">Iniciar conversa</a>
+      <a href="https://app.orizia.com.br" class="nav__cta" target="_blank" rel="noopener" data-en="Client Portal">Portal do Cliente</a>
       <button class="nav__hamburger" aria-label="Abrir menu">
         <span class="nav__hamburger-line"></span>
         <span class="nav__hamburger-line"></span>
@@ -69,12 +70,13 @@
 
   <div class="nav__mobile-overlay" role="dialog" aria-modal="true" aria-label="Navegação mobile">
     <ul class="nav__mobile-links">
-      <li><a href="../index.html" class="nav__mobile-link">Início</a></li>
-      <li><a href="capabilities.html" class="nav__mobile-link">Capacidades</a></li>
-      <li><a href="score.html" class="nav__mobile-link">Score</a></li>
-      <li><a href="report.html" class="nav__mobile-link">Relatório</a></li>
+      <li><a href="../index.html" class="nav__mobile-link" data-en="Home">Início</a></li>
+      <li><a href="capabilities.html" class="nav__mobile-link" data-en="Capabilities">Capacidades</a></li>
+      <li><a href="diagnostico.html" class="nav__mobile-link" data-en="Diagnosis">Diagnóstico</a></li>
+      <li><a href="score.html" class="nav__mobile-link" data-en="Score">Score</a></li>
+      <li><a href="report.html" class="nav__mobile-link" data-en="Report">Relatório</a></li>
     </ul>
-    <a href="contact.html" class="nav__mobile-cta">Iniciar conversa</a>
+    <a href="https://app.orizia.com.br" class="nav__mobile-cta" target="_blank" rel="noopener" data-en="Client Portal">Portal do Cliente</a>
     <div class="nav__mobile-bottom">
       <span class="nav__mobile-bottom-label">Contato</span>
       <a href="mailto:contato@orizia.com.br" class="nav__mobile-bottom-email">contato@orizia.com.br</a>
@@ -151,28 +153,119 @@
   <!-- METHODOLOGY -->
   <section class="methodology">
     <div class="container">
-      <p class="eyebrow reveal" style="margin-bottom:24px;">Metodologia</p>
-      <h2 class="methodology__title reveal reveal-delay-1">Como o score é calculado.</h2>
+      <p class="eyebrow reveal" style="margin-bottom:24px;" data-en="Methodology">Metodologia</p>
+      <h2 class="methodology__title reveal reveal-delay-1" data-en="How the score is calculated.">Como o score é calculado.</h2>
       <div class="methodology__steps">
         <div class="method-step">
-          <p class="method-step__num">Passo 01</p>
-          <h3 class="method-step__name">Ingestão e limpeza de dados</h3>
-          <p class="method-step__desc">Padronizamos dados brutos da carteira de múltiplas fontes — sistemas de apólice, registros de sinistro, plataformas embarcadas e logs comportamentais — em um modelo unificado.</p>
+          <p class="method-step__num" data-en="Step 01">Passo 01</p>
+          <h3 class="method-step__name" data-en="Data ingestion and cleansing">Ingestão e limpeza de dados</h3>
+          <p class="method-step__desc" data-en="We standardize raw portfolio data from multiple sources — policy systems, claims records, embedded platforms — into a unified model.">Padronizamos dados brutos da carteira de múltiplas fontes — sistemas de apólice, registros de sinistro, plataformas embarcadas — em um modelo unificado.</p>
         </div>
         <div class="method-step">
-          <p class="method-step__num">Passo 02</p>
-          <h3 class="method-step__name">Cálculo dos subindicadores</h3>
-          <p class="method-step__desc">Quatro modelos proprietários computam controle de churn, taxa de adesão, fit de produto e risco da carteira, cada um pontuado de 0 a 100 contra benchmarks específicos do setor.</p>
+          <p class="method-step__num" data-en="Step 02">Passo 02</p>
+          <h3 class="method-step__name" data-en="Sub-indicator calculation">Cálculo dos subindicadores</h3>
+          <p class="method-step__desc" data-en="Four proprietary models compute Churn Control (30%), Adhesion Rate (25%), Product Fit (25%), and Portfolio Risk (20%) — each scored 0–100 against sector benchmarks.">Quatro modelos proprietários calculam Controle de Churn (30%), Taxa de Adesão (25%), Fit de Produto (25%) e Risco da Carteira (20%) — cada um pontuado de 0 a 100 contra benchmarks do setor.</p>
         </div>
         <div class="method-step">
-          <p class="method-step__num">Passo 03</p>
-          <h3 class="method-step__name">Síntese do Score composto</h3>
-          <p class="method-step__desc">Subindicadores são ponderados conforme suas dependências dinâmicas e sintetizados em um Score único — uma representação fiel da operação como um todo.</p>
+          <p class="method-step__num" data-en="Step 03">Passo 03</p>
+          <h3 class="method-step__name" data-en="Composite Score synthesis">Síntese do Score composto</h3>
+          <p class="method-step__desc" data-en="Sub-indicators are weighted and synthesized into a single Score — a faithful representation of the operation as a whole. If a sub-indicator is unavailable, weights are renormalized.">Subindicadores são ponderados e sintetizados em um Score único. Se algum dado faltar, os pesos são renormalizados automaticamente.</p>
         </div>
         <div class="method-step">
-          <p class="method-step__num">Passo 04</p>
-          <h3 class="method-step__name">Calibração de benchmark e entrega</h3>
-          <p class="method-step__desc">O Score é calibrado contra benchmarks do mercado brasileiro de seguros embarcados e entregue com um brief de duas páginas explicando os movimentos, causas e recomendações.</p>
+          <p class="method-step__num" data-en="Step 04">Passo 04</p>
+          <h3 class="method-step__name" data-en="Benchmark calibration and delivery">Calibração de benchmark e entrega</h3>
+          <p class="method-step__desc" data-en="The Score is calibrated against Brazilian embedded insurance benchmarks (SUSEP/CNSeg 2025) and delivered with the 3 critical points identified by our AI — reviewed by a specialist.">O Score é calibrado contra benchmarks do setor (SUSEP/CNSeg 2025) e entregue com os 3 pontos críticos identificados pela IA — revisados por um especialista.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE CALCULATE — NEW SECTION -->
+  <section style="padding:100px 0;background:rgba(168,186,208,0.04);border-top:1px solid rgba(168,186,208,0.08);border-bottom:1px solid rgba(168,186,208,0.08);">
+    <div class="container">
+      <p class="eyebrow reveal" style="margin-bottom:24px;" data-en="Weights &amp; benchmarks">Pesos &amp; benchmarks</p>
+      <h2 class="reveal reveal-delay-1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,3vw,44px);color:var(--white);margin-bottom:48px;" data-en="How we calculate each sub-indicator.">Como calculamos cada subindicador.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;">
+        <div style="border:1px solid rgba(168,186,208,0.12);padding:28px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <p style="font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--accent);" data-en="Churn Control">Controle de Churn</p>
+            <span style="font-size:24px;font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--white);">30%</span>
+          </div>
+          <p style="font-size:13px;font-weight:300;color:var(--silver);line-height:1.8;margin-bottom:16px;" data-en="(1 − annual_churn_normalized) × 100. Healthy churn (&lt;15% p.a.) → 100. Churn ≥40% → 0.">Fórmula: (1 − churn_anual_normalizado) × 100. Churn saudável (&lt;15% a.a.) → 100. Churn ≥40% → 0.</p>
+          <p style="font-size:11px;color:var(--text-muted);" data-en="Source: cancelamentos.csv + carteira.csv">Fonte: cancelamentos.csv + carteira.csv</p>
+          <p style="font-size:11px;color:var(--text-muted);margin-top:4px;" data-en="Benchmark: healthy &lt;15% p.a. (sector average)">Benchmark: saudável &lt;15% a.a. (média do setor)</p>
+        </div>
+        <div style="border:1px solid rgba(168,186,208,0.12);padding:28px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <p style="font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--accent);" data-en="Adhesion Rate">Taxa de Adesão</p>
+            <span style="font-size:24px;font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--white);">25%</span>
+          </div>
+          <p style="font-size:13px;font-weight:300;color:var(--silver);line-height:1.8;margin-bottom:16px;" data-en="min(total_adhesions / total_exposures / 0.35, 1) × 100. 35% = sector top benchmark.">Fórmula: min(adesões / exposições / 0,35, 1) × 100. 35% = topo do benchmark setorial.</p>
+          <p style="font-size:11px;color:var(--text-muted);" data-en="Source: adesoes.csv">Fonte: adesoes.csv</p>
+          <p style="font-size:11px;color:var(--text-muted);margin-top:4px;" data-en="Benchmark: 20–35% depending on segment">Benchmark: 20–35% conforme segmento</p>
+        </div>
+        <div style="border:1px solid rgba(168,186,208,0.12);padding:28px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <p style="font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--accent);" data-en="Product Fit">Fit de Produto</p>
+            <span style="font-size:24px;font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--white);">25%</span>
+          </div>
+          <p style="font-size:13px;font-weight:300;color:var(--silver);line-height:1.8;margin-bottom:16px;" data-en="Composite: 60% healthy loss ratio + 40% non-commercial cancellation dispersion.">Composto: 60% sinistralidade saudável + 40% dispersão de motivos não-comerciais de cancelamento.</p>
+          <p style="font-size:11px;color:var(--text-muted);" data-en="Source: sinistros.csv + carteira.csv + cancelamentos.csv">Fonte: sinistros.csv + carteira.csv + cancelamentos.csv</p>
+          <p style="font-size:11px;color:var(--text-muted);margin-top:4px;" data-en="Benchmark: loss ratio &lt;60% (SUSEP 2025 avg 40.1%)">Benchmark: sinistralidade &lt;60% (SUSEP 2025: média 40,1%)</p>
+        </div>
+        <div style="border:1px solid rgba(168,186,208,0.12);padding:28px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <p style="font-size:10px;letter-spacing:0.4em;text-transform:uppercase;color:var(--accent);" data-en="Portfolio Risk">Risco da Carteira</p>
+            <span style="font-size:24px;font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--white);">20%</span>
+          </div>
+          <p style="font-size:13px;font-weight:300;color:var(--silver);line-height:1.8;margin-bottom:16px;" data-en="Composite: 50% longevity (avg LTV ÷ 365) + 50% channel diversification (inverted Herfindahl index).">Composto: 50% longevidade (LTV médio ÷ 365) + 50% diversificação de canais (índice Herfindahl invertido).</p>
+          <p style="font-size:11px;color:var(--text-muted);" data-en="Source: carteira.csv + cancelamentos.csv">Fonte: carteira.csv + cancelamentos.csv</p>
+          <p style="font-size:11px;color:var(--text-muted);margin-top:4px;" data-en="Benchmark: LTV &gt;365 days, 3+ channels">Benchmark: LTV &gt;365 dias, 3+ canais ativos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXAS DE CLASSIFICAÇÃO — NEW SECTION -->
+  <section style="padding:100px 0;">
+    <div class="container">
+      <p class="eyebrow reveal" style="margin-bottom:24px;" data-en="Score ranges">Faixas de pontuação</p>
+      <h2 class="reveal reveal-delay-1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,3vw,44px);color:var(--white);margin-bottom:48px;" data-en="What each range means.">O que cada faixa significa.</h2>
+      <div style="display:flex;flex-direction:column;gap:0;border:1px solid rgba(168,186,208,0.12);">
+        <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:0;padding:20px 28px;border-bottom:1px solid rgba(168,186,208,0.08);align-items:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:rgba(220,80,80,0.85);">0–39</span>
+          <div>
+            <p style="font-size:12px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:rgba(220,80,80,0.85);margin-bottom:4px;" data-en="Critical">Crítico</p>
+            <p style="font-size:13px;font-weight:300;color:var(--silver);" data-en="Operation with serious vulnerabilities in multiple dimensions. Requires immediate action.">Operação com vulnerabilidades sérias em múltiplas dimensões. Requer ação imediata.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:0;padding:20px 28px;border-bottom:1px solid rgba(168,186,208,0.08);align-items:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:rgba(240,160,60,0.9);">40–59</span>
+          <div>
+            <p style="font-size:12px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:rgba(240,160,60,0.9);margin-bottom:4px;" data-en="Attention">Atenção</p>
+            <p style="font-size:13px;font-weight:300;color:var(--silver);" data-en="Operation below sector average. Clear opportunities for improvement in prioritized areas.">Operação abaixo da média do setor. Oportunidades claras de melhoria em áreas priorizadas.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:0;padding:20px 28px;border-bottom:1px solid rgba(168,186,208,0.08);align-items:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--accent);">60–74</span>
+          <div>
+            <p style="font-size:12px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;" data-en="Good">Bom</p>
+            <p style="font-size:13px;font-weight:300;color:var(--silver);" data-en="Operation at or slightly above sector average. Some specific gaps to address.">Operação na média ou ligeiramente acima do setor. Lacunas pontuais a endereçar.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:0;padding:20px 28px;border-bottom:1px solid rgba(168,186,208,0.08);align-items:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--silver-light);">75–89</span>
+          <div>
+            <p style="font-size:12px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:var(--silver-light);margin-bottom:4px;" data-en="Excellent">Ótimo</p>
+            <p style="font-size:13px;font-weight:300;color:var(--silver);" data-en="Well-performing operation above sector average. Focus on maintaining and fine-tuning.">Operação de bom desempenho acima da média setorial. Foco em manutenção e refinamento.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:120px 1fr 1fr;gap:0;padding:20px 28px;align-items:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--white);">90–100</span>
+          <div>
+            <p style="font-size:12px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:var(--white);margin-bottom:4px;" data-en="Outstanding">Excelente</p>
+            <p style="font-size:13px;font-weight:300;color:var(--silver);" data-en="Reference operation in the Brazilian embedded insurance sector. Consistent competitive advantage.">Operação de referência no setor de seguros embarcados brasileiro. Vantagem competitiva consistente.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -181,13 +274,13 @@
   <!-- CTA -->
   <section class="score-cta">
     <div class="container">
-      <p class="eyebrow" style="margin-bottom:24px;">Solicite seu Score</p>
+      <p class="eyebrow" style="margin-bottom:24px;" data-en="Get your Score for free">Receba seu Score gratuitamente</p>
       <h2 class="score-cta__title"
-          data-en-html="What's the Score of<br>your embedded operation?">
-        Qual é o Score da sua<br>operação embarcada?
+          data-en-html="Receive the Score of<br>your operation in 48h.<br><em>Free.</em>">
+        Receba o Score da sua<br>operação em 48h.<br><em>Grátis.</em>
       </h2>
-      <p class="score-cta__desc">O cálculo do primeiro Score leva 21 dias da assinatura do NDA à entrega. Inclui sessão executiva completa de revisão e mapeamento de caminhos.</p>
-      <a href="contact.html" class="btn btn--silver">Solicitar seu primeiro score →</a>
+      <p class="score-cta__desc" data-en="Send your operation data — portfolio, cancellations, claims, adhesion rates — and our AI analyzes, a specialist reviews, and you receive your Score + 3 critical points by email and WhatsApp. No commitment.">Envie os dados da sua operação — carteira, cancelamentos, sinistros, taxas de adesão — e nossa IA analisa, um especialista revisa e você recebe seu Score + 3 pontos críticos por e-mail e WhatsApp. Sem compromisso.</p>
+      <a href="diagnostico.html" class="btn btn--silver" data-en="Start free diagnosis →">Iniciar diagnóstico gratuito →</a>
     </div>
   </section>
 
@@ -197,11 +290,13 @@
         <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;letter-spacing:0.18em;color:var(--white);">ORIZIA</span>
         <span style="font-size:8px;letter-spacing:0.45em;text-transform:uppercase;color:var(--text-muted);">Consulting</span>
       </a>
-      <nav style="display:flex;gap:32px;" aria-label="Navegação do rodapé">
-        <a href="../index.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Início</a>
-        <a href="capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Capacidades</a>
-        <a href="report.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Relatório</a>
-        <a href="contact.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;">Contato</a>
+      <nav style="display:flex;gap:32px;flex-wrap:wrap;" aria-label="Navegação do rodapé">
+        <a href="../index.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Home">Início</a>
+        <a href="capabilities.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Capabilities">Capacidades</a>
+        <a href="diagnostico.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Diagnosis">Diagnóstico</a>
+        <a href="report.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Report">Relatório</a>
+        <a href="contact.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Contact">Contato</a>
+        <a href="privacidade.html" style="font-size:11px;letter-spacing:0.1em;color:var(--text-muted);text-transform:uppercase;" data-en="Privacy">Privacidade</a>
       </nav>
       <p style="font-size:11px;color:var(--text-muted);letter-spacing:0.05em;">© 2026 Orizia Consulting</p>
     </div>
